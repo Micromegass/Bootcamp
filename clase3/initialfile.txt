@@ -1,0 +1,6 @@
+
+
+gets.chomp
+
+puts text.upcase
+puts text.reverse
