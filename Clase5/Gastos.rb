@@ -6,7 +6,6 @@
 #se debe poder ver el total de ingresos y gastos para mes particular.
 
 require "date"
-require_relative "./interface"
 class Ingresos
 
   def initialize
@@ -27,13 +26,15 @@ class Ingresos
   end
 
 
-  def ver_mes(mes)
+  def ver_mes
+    return @movimientos.select{|x| x[:fecha] = "06"}
+    end
 
-  end
 
 end
 
 ing = Ingresos.new
-puts ing.registrar_ingresos(2000, "2012-04-12", "beer")
+puts ing.registrar_ingresos(2000, "2012-06-12", "beer")
 eg = Ingresos.new
 puts eg.registrar_egresos(1000, "2012-05-12","arriendo")
+puts ing.ver_mes
