@@ -1,3 +1,3 @@
-012-schnitzel-10-true
-013-Pommes-5-false
-014-Pasta-7-true
+code-012-name-schnitzel-price-10-disponsible-true
+code-013-name-Pommes-price-5-disponsible-false
+code-014-name-Pasta-price-8-disponsible-true

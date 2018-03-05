@@ -18,25 +18,23 @@
 #     Tomar un pedido a partir de la disponibilidad del menu
 #     Pagar un pedido
 
-require "./000module_menu"
-
 
 
 class Person
+require_relative "./000module_menu"
 attr_accessor :name
 
-def initialize
+  def initialize
   @name = name
-end
-
-  def place_order
-    puts "what would you like to order? Please enter the code of the meal. We have: "
-    puts menu = File.read("000menu.txt")
-    @hash_menu = menu.map {|i| i.to_hash}
   end
 
-  def pay_order
-  end
+    def place_order
+    puts "what would you like to order? Please enter the code of the meal. We have:  "
+    return @menu
+    end
+
+    def pay_order
+    end
 
 
 end
